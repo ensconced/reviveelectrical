@@ -21,22 +21,26 @@
         font-size: 0;
       }
 
-      nav {
+      nav,
+      footer {
         font-size: 16px;
-        position: fixed;
-        width: 100vw;
+
         line-height: 68px;
         height: 68px;
-        padding: 0.2rem 0;
         display: flex;
         flex-direction: row;
+        width: 100vw;
+        padding: 0.2rem 0;
         justify-content: space-around;
         background-color: rgb(0, 68, 69);
         color: rgb(230, 236, 237);
       }
 
+      nav {
+        position: fixed;
+      }
+
       a {
-        text-decoration: none;
         color: inherit;
       }
 
@@ -60,6 +64,27 @@
         padding: 40px;
       }
 
+      #hero {
+        display: flex;
+        width: 100vw;
+        height: 1000px;
+        background-image: url(/assets/front-page.webp);
+        background-size: cover;
+        align-items: center;
+        padding: 40px;
+        font-size: 16px;
+      }
+
+      @media (max-width: 1000px) {
+        .service-list {
+          width: 100vw;
+          height: 400px;
+        }
+        #hero {
+          height: 600px;
+        }
+      }
+
       .text-background {
         background-color: rgba(64, 63, 69, 0.8);
         color: rgb(230, 236, 237);
@@ -72,18 +97,7 @@
       <h1>Revive Electrical Solutions</h1>
     </nav>
     <main>
-      <div
-        style="
-          display: flex;
-          width: 100vw;
-          height: 1000px;
-          background-image: url(/assets/front-page.webp);
-          background-size: cover;
-          align-items: center;
-          padding: 40px;
-          font-size: 16px;
-        "
-      >
+      <div id="hero">
         <div class="text-background">
           <p>
             Revive Electrical Solutions are a small electrical contractor based
@@ -96,14 +110,6 @@
           <p>
             We take great pride in our work, and hold our reputation for honesty
             and integrity very highly.
-          </p>
-          <p>
-            <a href="tel: 07458185033">tel: 07458185033</a>
-          </p>
-          <p>
-            <a href="mailto: info@reviveelectrical.co.uk"
-              >email: info@reviveelectrical.co.uk</a
-            >
           </p>
         </div>
       </div>
@@ -126,45 +132,58 @@
       </div>
       <div
         class="service-list"
-        style="background-image: url(/assets/dusk.webp)"
+        style="background-image: url(/assets/marbleisland.webp)"
       >
         <div class="text-background">
           <h2>Maintenance</h2>
           <ul>
-            <li>New builds</li>
-            <li>High end residential</li>
-            <li>Commercial</li>
-            <li>Industrial</li>
-            <li>Agricultural</li>
-            <li>Heating systems</li>
-            <li>Energy saving</li>
+            <li>Commercial offices</li>
+            <li>FMCG environment</li>
+            <li>Automotive manufacturing</li>
+            <li>Schools, colleges and universities</li>
+            <li>Scientific research environment</li>
+            <li>Private estates</li>
           </ul>
         </div>
       </div>
       <div
         class="service-list"
-        style="background-image: url(/assets/marbleisland.webp)"
+        style="background-image: url(/assets/patio.webp)"
       >
-        <h2>Maintenance</h2>
-        <ul>
-          <li>Commercial offices</li>
-          <li>FMCG environment</li>
-          <li>Automotive manufacturing</li>
-          <li>Schools, colleges and universities</li>
-          <li>Scientific research environment</li>
-          <li>Private estates</li>
-        </ul>
+        <div class="text-background">
+          <h2>Inspection and Testing</h2>
+          <ul>
+            <li>Domestic Electrical Installation condition reports</li>
+            <li>Full Commercial and industrial Reports</li>
+          </ul>
+        </div>
       </div>
       <div
         class="service-list"
-        style="background-image: url(/assets/patio.webp)"
+        style="background-image: url(/assets/galley.webp)"
       >
-        <h2>Inspection and Testing</h2>
-        <ul>
-          <li>Domestic Electrical Installation condition reports</li>
-          <li>Full Commercial and industrial Reports</li>
-        </ul>
+        <div class="text-background">
+          <h2>Contact</h2>
+          <ul>
+            <li>
+              <span>tel: </span><a href="tel: 07458185033">07458185033</a>
+            </li>
+            <li>
+              <span>email: </span
+              ><a href="mailto: info@reviveelectrical.co.uk"
+                >info@reviveelectrical.co.uk</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
     </main>
+    <footer>
+      <a
+        href="https://www.checkatrade.com/trades/reviveelectricalsolutions/reviews"
+        target="_blank"
+        >Testimonials</a
+      >
+    </footer>
   </body>
 </html>
