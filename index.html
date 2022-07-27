@@ -34,9 +34,9 @@
         color: rgb(230, 236, 237);
       }
 
-      nav a {
-        color: rgb(230, 236, 237);
+      a {
         text-decoration: none;
+        color: inherit;
       }
 
       main {
@@ -62,9 +62,7 @@
   </head>
   <body>
     <nav>
-      <a href="#">Home</a>
       <h1>Revive Electrical Solutions</h1>
-      <a href="#">Contact</a>
     </nav>
     <main>
       <div
@@ -72,10 +70,11 @@
           display: flex;
           width: 100vw;
           height: 1000px;
-          background-image: url(/assets/front-page.jpg);
+          background-image: url(/assets/front-page.webp);
           background-size: cover;
           align-items: center;
           padding: 40px;
+          font-size: 16px;
         "
       >
         <div
@@ -97,11 +96,19 @@
             We take great pride in our work, and hold our reputation for honesty
             and integrity very highly.
           </p>
+          <p>
+            <a href="tel: 07458185033">tel: 07458185033</a>
+          </p>
+          <p>
+            <a href="mailto: info@reviveelectrical.co.uk"
+              >email: info@reviveelectrical.co.uk</a
+            >
+          </p>
         </div>
       </div>
       <div
         class="service-list"
-        style="background-image: url(/assets/daffodils.JPG)"
+        style="background-image: url(/assets/daffodils.webp)"
       >
         <h2>Installation</h2>
         <ul>
@@ -114,7 +121,10 @@
           <li>Energy saving</li>
         </ul>
       </div>
-      <div class="service-list" style="background-image: url(/assets/dusk.jpg)">
+      <div
+        class="service-list"
+        style="background-image: url(/assets/dusk.webp)"
+      >
         <h2>Maintenance</h2>
         <ul>
           <li>New builds</li>
@@ -128,7 +138,7 @@
       </div>
       <div
         class="service-list"
-        style="background-image: url(/assets/marbleisland.JPG)"
+        style="background-image: url(/assets/marbleisland.webp)"
       >
         <h2>Maintenance</h2>
         <ul>
@@ -142,7 +152,7 @@
       </div>
       <div
         class="service-list"
-        style="background-image: url(/assets/patio.jpg)"
+        style="background-image: url(/assets/patio.webp)"
       >
         <h2>Inspection and Testing</h2>
         <ul>
